@@ -6,11 +6,7 @@ class stdClass extends \atoum\test {
 
     public function testSay ( ) {
 
-        if(50503 !== PHP_VERSION_ID)
-            $to = 'foo';
-        else
-            $to = 'bar';
-
+        $to = 'foo';
         $this->string('foo')->isEqualTo($to);
     }
 
